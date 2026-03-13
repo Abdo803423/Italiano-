@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Italiano — Fine Italian Dining</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Cursor -->
+<div class="cur-ring" id="curRing"></div>
+<div class="cur-dot"  id="curDot"></div>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-word">ITALIANO</div>
+  <div class="loader-bar"></div>
+</div>
+
+<!-- Navbar -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">
+    <img src="Italian_food_vector_logo_design_illustration__italian_restaurant_logo_badge_design_icon_template___Premium_Vector.png"
+         alt="Italiano Logo"
+         onerror="this.style.display='none'">
+    <span>Italiano</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact" class="cta">Book a Table</a></li>
+  </ul>
+  <div class="hamburger" id="ham">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div id="mob-nav">
+  <a href="#home"    onclick="closeMob()">Home</a>
+  <a href="#about"   onclick="closeMob()">About</a>
+  <a href="#menu"    onclick="closeMob()">Menu</a>
+  <a href="#gallery" onclick="closeMob()">Gallery</a>
+  <a href="#contact" onclick="closeMob()">Contact</a>
+  <a href="#contact" onclick="closeMob()" class="cta" style="font-size:1.2rem;background:var(--gold);color:var(--dark);padding:12px 32px;border-radius:2px;font-family:Montserrat,sans-serif;font-weight:700;letter-spacing:.2em;font-size:.8rem;text-transform:uppercase">Book a Table</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div id="particles"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Est. 1999 &nbsp;·&nbsp; New Fayoum, Egypt</div>
+    <h1 class="hero-title">
+      <span class="t1">Welcome to</span>
+      <span class="t2">Italiano</span>
+    </h1>
+    <p class="hero-sub">Where Every Meal Becomes a Memory</p>
+    <div class="hero-btns">
+      <a href="#menu"    class="btn-gold">Explore Menu</a>
+      <a href="#contact" class="btn-ghost">Reserve a Table</a>
+    </div>
+  </div>
+  <div class="scroll-hint" id="scrollHint">
+    <span>Scroll</span>
+    <div class="scroll-bar"></div>
+  </div>
+</section>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about" class="section">
+  <div class="section-inner about-grid">
+    <div class="about-visual rvl">
+      <div class="about-card"><img src="contact.jpeg" alt=""></div>
+      <div class="about-badge">
+        <div class="big">25+</div>
+        <small>Years of<br>Excellence</small>
+      </div>
+    </div>
+    <div class="about-text rvr">
+      <div class="tag">Our Story</div>
+      <h2 class="sec-title">The Italiano<br><em>Legacy</em></h2>
+      <div class="divider"><div class="dline"></div><div class="ddot"></div><div class="dline"></div></div>
+      <p>Since 1999, Italiano has been the heart of authentic Italian dining in Fayoum. Our recipes are passed down through generations — each dish a love letter to the traditions of Naples, Rome, and Tuscany.</p>
+      <p>We source only the finest ingredients: imported DOP mozzarella, hand-rolled pasta, and fresh herbs from our own garden. Every bite tells a story of passion and craftsmanship.</p>
+      <div class="stats">
+        <div><div class="stat-num" id="cnt1">0+</div><div class="stat-lbl">Happy Guests</div></div>
+        <div><div class="stat-num">48</div><div class="stat-lbl">Menu Items</div></div>
+        <div><div class="stat-num">5★</div><div class="stat-lbl">Avg Rating</div></div>
+      </div>
+      <a href="#menu" class="btn-dark">Discover Our Menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ OFFERS ═══ -->
+<section id="offers" class="section">
+  <div class="section-inner">
+    <div class="offers-head rv">
+      <div class="tag">Limited Time</div>
+      <h2 class="sec-title">Special Offers</h2>
+    </div>
+    <div class="offers-grid">
+      <div class="offer-card rv" style="transition-delay:.1s">
+        <span class="badge-sale">Save 67%</span>
+        <div class="offer-img"><img src="offer3.png" alt=""></div>
+        <div class="offer-body">
+          <h3>Quattro Pasta</h3>
+          <p>Four-cheese pasta with truffle oil, slow-roasted tomatoes, and fresh basil from our garden.</p>
+          <div class="offer-price"><span class="old">$55.00</span><span class="now">$18.00</span></div>
+        </div>
+      </div>
+      <div class="offer-card rv" style="transition-delay:.2s">
+        <span class="badge-sale">Save 67%</span>
+        <div class="offer-img"><img src="offer2.png" alt=""></div>
+        <div class="offer-body">
+          <h3>Vegetarian Pasta</h3>
+          <p>Fresh seasonal vegetables, ricotta, lemon zest, and pine nuts over handmade tagliatelle.</p>
+          <div class="offer-price"><span class="old">$55.00</span><span class="now">$18.00</span></div>
+        </div>
+      </div>
+      <div class="offer-card rv" style="transition-delay:.3s">
+        <span class="badge-sale">Save 67%</span>
+        <div class="offer-img"><img src="offer1.png" alt=""></div>
+        <div class="offer-body">
+          <h3>Gluten-Free Pasta</h3>
+          <p>Our signature sauce over rice pasta — all the flavor, none of the gluten. Chef's special.</p>
+          <div class="offer-price"><span class="old">$55.00</span><span class="now">$18.00</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MENU ═══ -->
+<section id="menu" class="section">
+  <div class="section-inner">
+    <div class="menu-head rv">
+      <div class="tag">Culinary Selection</div>
+      <h2 class="sec-title">Our Special Menu</h2>
+      <p>Order Two &amp; Get the Third Free</p>
+    </div>
+
+    <!-- TABS -->
+    <div class="tabs">
+      <button class="tab on"   data-filter="all">All</button>
+      <button class="tab"      data-filter="pasta">Pasta</button>
+      <button class="tab"      data-filter="pizza">Pizza</button>
+      <button class="tab"      data-filter="mains">Mains</button>
+      <button class="tab"      data-filter="drinks">Drinks</button>
+    </div>
+
+    <!-- ITEMS -->
+    <div class="menu-grid">
+      <div class="mitem" data-cat="pasta">  <div class="mitem-ico"><img src="food1.png" alt=""></div><div class="mitem-info"><h4>Lassal Cheese</h4><p>Béchamel, ricotta &amp; mozzarella layers</p></div><div class="mitem-price">$18</div></div>
+      <div class="mitem" data-cat="mains">  <div class="mitem-ico"><img src="food2.png" alt=""></div><div class="mitem-info"><h4>Jumbo Crab Shrimp</h4><p>Garlic butter, lemon, fresh herbs</p></div><div class="mitem-price">$24</div></div>
+      <div class="mitem" data-cat="drinks"> <div class="mitem-ico"><img src="food3.png" alt=""></div><div class="mitem-info"><h4>Koktail Juice</h4><p>Seasonal fruits, mint, honey drizzle</p></div><div class="mitem-price">$12</div></div>
+      <div class="mitem" data-cat="mains">  <div class="mitem-ico"><img src="food4.png" alt=""></div><div class="mitem-info"><h4>Capo Steak</h4><p>Prime cut, rosemary jus, truffle fries</p></div><div class="mitem-price">$60</div></div>
+      <div class="mitem" data-cat="mains">  <div class="mitem-ico"><img src="food5.png" alt=""></div><div class="mitem-info"><h4>Organic Fruit Salad</h4><p>Seasonal fruits, chia, agave</p></div><div class="mitem-price">$18</div></div>
+      <div class="mitem" data-cat="pizza">  <div class="mitem-ico"><img src="food6.png" alt=""></div><div class="mitem-info"><h4>Cheese Pizza</h4><p>Wood-fired, five-cheese blend, basil oil</p></div><div class="mitem-price">$18</div></div>
+      <div class="mitem" data-cat="mains">  <div class="mitem-ico"><img src="food7.jpeg" alt=""></div><div class="mitem-info"><h4>Kofta Meat</h4><p>Spiced minced lamb, tahini, pita</p></div><div class="mitem-price">$40</div></div>
+      <div class="mitem" data-cat="pizza">  <div class="mitem-ico"><img src="food8.jpeg" alt=""></div><div class="mitem-info"><h4>Mega Cheese Pizza</h4><p>Extra-large, eight cheeses, truffle honey</p></div><div class="mitem-price">$30</div></div>
+      <div class="mitem" data-cat="mains">  <div class="mitem-ico"><img src="food9.jpeg" alt=""></div><div class="mitem-info"><h4>Spanish Pies</h4><p>Chorizo, manchego, piquillo peppers</p></div><div class="mitem-price">$14</div></div>
+      <div class="mitem" data-cat="mains">  <div class="mitem-ico"><img src="food10.jpeg" alt=""></div><div class="mitem-info"><h4>Chicken Shawarma</h4><p>Marinated chicken, garlic sauce, pickles</p></div><div class="mitem-price">$20</div></div>
+      <div class="mitem" data-cat="pasta">  <div class="mitem-ico"><img src="food11.jpeg" alt=""></div><div class="mitem-info"><h4>Quattro Pasta</h4><p>Four-cheese pasta, truffle oil, basil</p></div><div class="mitem-price">$18</div></div>
+      <div class="mitem" data-cat="drinks"> <div class="mitem-ico"><img src="food12.jpeg" alt=""></div><div class="mitem-info"><h4>Fresh Lemonade</h4><p>Squeezed daily, mint, sea salt rim</p></div><div class="mitem-price">$8</div></div>
+    </div>
+    <div class="menu-cta rv"><a href="#contact" class="btn-dark">View Full Menu</a></div>
+  </div>
+</section>
+
+<!-- ═══ HOURS ═══ -->
+<section id="hours">
+  <div class="hours-grid">
+    <div class="hcard rv" style="transition-delay:.1s"><div class="hcard-ico">☀️</div><h3>Breakfast</h3><p>8:00 AM — 10:00 AM</p><p class="sub">Weekdays</p></div>
+    <div class="hcard rv" style="transition-delay:.2s"><div class="hcard-ico">🌤️</div><h3>Lunch</h3><p>12:00 PM — 4:00 PM</p><p class="sub">Daily</p></div>
+    <div class="hcard rv" style="transition-delay:.3s"><div class="hcard-ico">🌙</div><h3>Dinner</h3><p>7:00 PM — 11:00 PM</p><p class="sub">Daily</p></div>
+    <div class="hcard rv" style="transition-delay:.4s"><div class="hcard-ico">🍰</div><h3>Dessert</h3><p>All Day Long</p><p class="sub">Always Available</p></div>
+  </div>
+</section>
+
+<!-- ═══ GALLERY ═══ -->
+<section id="gallery" class="section">
+  <div class="section-inner">
+    <div class="gallery-head rv">
+      <div class="tag">Visual Feast</div>
+      <h2 class="sec-title">Our Food Gallery</h2>
+    </div>
+    <div class="gal-grid">
+      <div class="gi rv"                        ><div class="gi-emoji"><img src="pizza.jpg" alt=""></div><div class="gi-cap">Wood-Fired Pizza</div></div>
+      <div class="gi rv" style="transition-delay:.1s"><div class="gi-emoji"><img src="pasta.jpg" alt=""></div><div class="gi-cap">Handmade Pasta</div></div>
+      <div class="gi rv" style="transition-delay:.2s"><div class="gi-emoji"><img src="gallery6.jpeg" alt=""></div><div class="gi-cap">Prime Steak</div></div>
+      <div class="gi rv" style="transition-delay:.3s"><div class="gi-emoji"><img src="gallery4.jpeg" alt=""></div><div class="gi-cap">Seafood Platter</div></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact" class="section">
+  <div class="section-inner contact-grid">
+    <div class="contact-left rvl">
+      <div class="tag">Find Us</div>
+      <h2 class="sec-title">Visit &amp;<br><em>Reserve</em></h2>
+      <div class="divider"><div class="dline"></div><div class="ddot"></div><div class="dline"></div></div>
+      <div class="cinfo"><div class="cico"><i class="fa-solid fa-location-dot"></i></div><div><h4>Address</h4><p>New Fayoum, Fayoum, Egypt</p></div></div>
+      <div class="cinfo"><div class="cico"><i class="fa-solid fa-phone"></i></div><div><h4>Phone</h4><p>+20 101 127 4897</p></div></div>
+      <div class="cinfo"><div class="cico"><i class="fa-solid fa-envelope"></i></div><div><h4>Email</h4><p>support@italiano.com</p></div></div>
+      <div class="cinfo"><div class="cico"><i class="fa-solid fa-clock"></i></div><div><h4>Hours</h4><p>Mon–Fri: 8:00 AM – 11:00 PM<br>Weekends: 11:00 AM – 1:00 AM</p></div></div>
+      <div class="socials">
+        <a href="#" class="soc"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="soc"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="soc"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="soc"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div class="rvr">
+      <form class="cform" onsubmit="submitForm(event)">
+        <div class="row2">
+          <div class="fg"><input type="text"  id="fn" placeholder=" "><label for="fn">Your Name</label></div>
+          <div class="fg"><input type="tel"   id="fp" placeholder=" "><label for="fp">Phone</label></div>
+        </div>
+        <div class="row2">
+          <div class="fg"><input type="date"  id="fd" placeholder=" "><label for="fd">Date</label></div>
+          <div class="fg"><input type="number" id="fg2" placeholder=" " min="1" max="20"><label for="fg2">Guests</label></div>
+        </div>
+        <div class="fg"><input type="email" id="fe" placeholder=" "><label for="fe">Email</label></div>
+        <div class="fg"><textarea id="fm" placeholder=" "></textarea><label for="fm">Special Requests</label></div>
+        <button type="submit" class="btn-submit">Reserve My Table</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 <span class="gc">Italiano Restaurant</span> · New Fayoum, Egypt · All Rights Reserved</p>
+  <p>Crafted with <span class="gc">Abdelrahman</span> Adel.</p>
+</footer>
+
+<script>
+/* ── LOADER ── */
+window.addEventListener('load', () => {
+  setTimeout(() => document.getElementById('loader').classList.add('out'), 1800);
+});
+
+/* ── CUSTOM CURSOR ── */
+const ring = document.getElementById('curRing');
+const dot2 = document.getElementById('curDot');
+if (ring && dot2) {
+  let rx=0,ry=0,mx=0,my=0;
+  document.addEventListener('mousemove', e => { mx=e.clientX; my=e.clientY; dot2.style.left=mx+'px'; dot2.style.top=my+'px'; });
+  (function loop(){ rx+=(mx-rx)*.13; ry+=(my-ry)*.13; ring.style.left=rx+'px'; ring.style.top=ry+'px'; requestAnimationFrame(loop); })();
+}
+
+/* ── NAVBAR STICKY ── */
+const nav = document.getElementById('navbar');
+window.addEventListener('scroll', () => nav.classList.toggle('stuck', window.scrollY > 55));
+
+/* ── SMOOTH SCROLL (all internal links) ── */
+document.addEventListener('click', e => {
+  const a = e.target.closest('a[href^="#"]');
+  if (!a) return;
+  const id = a.getAttribute('href');
+  if (id === '#') return;
+  const target = document.querySelector(id);
+  if (!target) return;
+  e.preventDefault();
+  const y = target.getBoundingClientRect().top + window.scrollY - 76;
+  window.scrollTo({ top: y, behavior: 'smooth' });
+});
+
+/* ── HAMBURGER ── */
+const ham  = document.getElementById('ham');
+const mobN = document.getElementById('mob-nav');
+ham.addEventListener('click', () => {
+  ham.classList.toggle('open');
+  mobN.classList.toggle('open');
+});
+function closeMob() {
+  ham.classList.remove('open');
+  mobN.classList.remove('open');
+}
+
+/* ── PARTICLES ── */
+const pc = document.getElementById('particles');
+for (let i=0; i<40; i++) {
+  const p = document.createElement('div');
+  p.className = 'ptcl';
+  const sz = 1.5 + Math.random()*3;
+  p.style.cssText = `left:${Math.random()*100}%;width:${sz}px;height:${sz}px;--d:${6+Math.random()*9}s;--dl:${Math.random()*9}s`;
+  pc.appendChild(p);
+}
+
+/* ── SCROLL REVEAL ── */
+const ro = new IntersectionObserver(entries => {
+  entries.forEach(en => { if (en.isIntersecting) en.target.classList.add('show'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.rv,.rvl,.rvr').forEach(el => ro.observe(el));
+
+/* ── MENU TABS FILTER ── */
+document.querySelectorAll('.tab').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.tab').forEach(b => b.classList.remove('on'));
+    this.classList.add('on');
+    const f = this.dataset.filter;
+    document.querySelectorAll('.mitem').forEach(item => {
+      const match = f === 'all' || item.dataset.cat === f;
+      item.classList.toggle('hide', !match);
+    });
+  });
+});
+
+/* ── COUNTER ── */
+const cnt = document.getElementById('cnt1');
+const co = new IntersectionObserver(entries => {
+  if (!entries[0].isIntersecting) return;
+  co.disconnect();
+  let n=0;
+  const iv = setInterval(() => {
+    n += 250;
+    cnt.textContent = n >= 12000 ? '12K+' : n.toLocaleString()+'+';
+    if (n >= 12000) clearInterval(iv);
+  }, 28);
+}, { threshold:.5 });
+if (cnt) co.observe(cnt);
+
+/* ── FORM ── */
+function submitForm(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('.btn-submit');
+  btn.textContent = '✓ Reservation Confirmed!';
+  btn.style.background = '#2d7a3a';
+  setTimeout(() => { btn.textContent='Reserve My Table'; btn.style.background=''; e.target.reset(); }, 3200);
+}
+
+/* ── SCROLL HINT CLICK ── */
+const sh = document.getElementById('scrollHint');
+if (sh) sh.addEventListener('click', () => {
+  const about = document.getElementById('about');
+  if (about) window.scrollTo({ top: about.getBoundingClientRect().top + window.scrollY - 76, behavior:'smooth' });
+});
+</script>
+</body>
+</html>
